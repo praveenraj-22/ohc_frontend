@@ -1,0 +1,118 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+
+            <div class="account-wall">
+                <img class="profile-img"
+                    src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                    alt="">
+                <form class="form-signin">
+                    <input type="text" class="form-control" ng-model="UserLogin.username" placeholder="Username"
+                        required autofocus>
+                    <input type="password" class="form-control" ng-model="UserLogin.cred" placeholder="Password"
+                        required>
+                    <button class="btn btn-lg btn-primary btn-block" ng-click="login()">
+                        Sign in</button>
+                </form>
+                <span style="color: red ; font-size: 18px;">{{loginFail.message}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+ -->
+
+
+ <!-- <div class="container" style="margin-top:40px">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong> Sign in to continue</strong>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <fieldset>
+                            <div class="row">
+                                <div class="center-block">
+                                    <img class="profile-img"
+                                        src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-10  col-md-offset-1 ">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-user"></i>
+                                            </span> 
+                                            <input class="form-control" ng-model="UserLogin.username" placeholder="Username"  type="text" autofocus>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="glyphicon glyphicon-lock"></i>
+                                            </span>
+                                            <input class="form-control" ng-model="UserLogin.cred" placeholder="Password" name="password" type="password" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-lg btn-primary btn-block" ng-click="login()" value="Sign in">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <span style="color: red ; font-size: 18px;">{{loginFail.message}}</span>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<main class="login-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Login</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Username</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" ng-model="userlogin.username" placeholder="Username" required autofocus>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" ng-model="userlogin.cred" placeholder="Password" required>
+                                    </div>
+                                </div>
+    
+                            
+    
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary" ng-click="login()">
+                                        Login
+                                    </button>
+                                
+                                </div>
+                        </div>
+                        </form>
+                        <span style="color: red ; font-size: 18px;">{{loginFail.message}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    </main>
+
+
+  
