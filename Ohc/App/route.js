@@ -1,7 +1,7 @@
 
  //app.constant('REST_URI','http://13.250.202.199:8080/ideamed/');
  //app.constant('REST_URI','http://localhost:8088/orbit/');
- app.constant('REST_URI','http://13.250.202.199:8080/orbit/');
+ app.constant('REST_URI','http://13.251.255.12:8080/orbit/');
  app.config(function($routeProvider)
  {
  
