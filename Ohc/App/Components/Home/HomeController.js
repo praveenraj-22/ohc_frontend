@@ -2,8 +2,8 @@
 
 
 
-app.controller('HomeController', ['HomeService', '$location', '$scope', '$rootScope', '$cookieStore', '$filter',
-    function (HomeService, $location, $scope, $rootScope, $cookieStore, $filter) {
+app.controller('HomeController', ['HomeService', '$location', '$scope',
+    function (HomeService, $location, $scope) {
 
 
 
@@ -255,6 +255,13 @@ app.controller('HomeController', ['HomeService', '$location', '$scope', '$rootSc
             )
            
         }
+        $scope.logout = function(){
+            //Just clear values from scope
+            $scope.username = '';
+            $scope.password = '';
+            $location.path('/');
+        }
+    
      
     }
 ])

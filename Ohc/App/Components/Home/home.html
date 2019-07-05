@@ -6,28 +6,13 @@
             <div class="row">
 
 
-                <!-- <div class="col-sm-2">
-                    <input type="text" id="datepicker"   placeholder="select Month"  ng-model="datefilter.fromdate" required />
-                </div> -->
-
+              <div class="container">
                 <form name="form" ng-submit="getIWSR()" class="form-horizontal" novalidate novalidate>
-                    <!-- <label>Firstname</label>
-                        <input name="firstname" type="text" ng-model="user.firstname" required/>
-                        <p ng-show="form.firstname.$invalid && form.firstname.$dirty">Firstname is required</p>
-                        <label>Lastname</label>
-                        <input type="text" ng-model="user.lastname" required/>
-                        <label>Age</label>
-                        <input type="text" ng-model="user.age"/>
-                        <br>
-                        <button ng-disabled="form.$invalid" class="btn">Submit</button> -->
-
-                    <!-- <label class="col-md-4 control-label">Select Month </label>  
-                        <label class="col-md-4 control-label">Select Month </label> -->
+              
                     <input type="text" class="col-md-4" id="datepicker" placeholder="select Month"
                         ng-model="datefilter.fromdate" required />
                     <p ng-show="form.datepicker.$invalid && form.datepicker.$dirty">datepicker is required</p>
 
-                    <!-- <label class="col-md-4 control-label">Select Department </label>   -->
                     <select name="department" class="col-md-4" ng-model="datefilter.department" required
                         class="form-control selectpicker">
                         <option value="" selected style="color: blue">Select department</option>
@@ -36,32 +21,19 @@
                         <option value="3">Opticals</option>
                         <option value="4">Pharmacy</option>
                     </select>
-
-
-                    <!-- <div class="col-sm-2">
-                                <input type="text" id="datepicker"   placeholder="select Month"  ng-model="datefilter.fromdate" required />
-                                <p ng-show="form.datepicker.$invalid && form.datepicker.$dirty">datepicker is required</p>
-                            </div>
-                           
-                            <div class="col-sm-4">
-                                    <select name="department" ng-model="datefilter.department" required class="form-control selectpicker">
-                                        <option value="" selected style="color: blue">Select department</option>
-                                        <option value="1">OP</option>
-                                        <option value="2">IP</option>
-                                        <option value="3">Opticals</option>
-                                        <option value="4">Pharmacy</option>
-                                    </select>
-                                </div> -->
-
+             
                     <button ng-disabled="form.$invalid" ng-hide="IsVisible" id="apply" class="btn">Submit</button>
                     <!-- <div ng-hide="IsVisible">Angular</div> -->
+                    <input type="button" value="Export" ng-hide="IsVisible" ng-click="Export()"> 
+                      <input type="button" value="logout" ng-hide="IsVisible" ng-click="logout()">
+                  
 
-
-                    <input type="button" value="Export" ng-hide="IsVisible" ng-click="Export()" />
                     <div ng-show="IsVisible">Please wait table is loading .... !</div>
-
+                  
                 </form>
 
+              </div>
+           
                 <style>
                     .row {
                         margin-left: 23px;
